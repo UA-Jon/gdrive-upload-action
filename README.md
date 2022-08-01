@@ -1,5 +1,5 @@
-[![build](https://github.com/team-tumbleweed/gdrive-upload-action/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/team-tumbleweed/gdrive-upload-action/actions)
-[![Go Report Card](https://goreportcard.com/badge/github.com/team-tumbleweed/gdrive-upload-action)](https://goreportcard.com/report/github.com/team-tumbleweed/gdrive-upload-action)
+[![build](https://github.com/UpstreamJon/gdrive-upload-action/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/UpstreamJon/gdrive-upload-action/actions)
+[![Go Report Card](https://goreportcard.com/badge/github.com/UpstreamJon/gdrive-upload-action)](https://goreportcard.com/report/github.com/UpstreamJon/gdrive-upload-action)
 
 # gdrive-upload-action
 Github action that uploads files to Google Drive.
