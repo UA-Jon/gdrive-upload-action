@@ -23,6 +23,7 @@ const (
 	nameInput        = "name"
 	folderIdInput    = "folderId"
 	credentialsInput = "credentials"
+	impersonateUser  = "impersonate"
 )
 
 func main() {
@@ -65,6 +66,12 @@ func main() {
 	conf, err := google.JWTConfigFromJSON([]byte(creds), scope)
 	if err != nil {
 		githubactions.Fatalf(fmt.Sprintf("fetching JWT credentials failed with error: %v", err))
+	}
+
+	// impersonate user for file upload
+	impersonate := githubactions.GetInput(impersonateUser)
+	if impersonate != "" {
+		conf.Subject = impersonate
 	}
 
 	// instantiating a new drive service
