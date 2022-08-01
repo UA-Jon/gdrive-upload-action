@@ -34,6 +34,10 @@ Required: **YES**.
 
 A base64 encoded string with the [GSA credentials](https://stackoverflow.com/questions/46287267/how-can-i-get-the-file-service-account-json-for-google-translate-api/46290808).
 
+## ``impersonate``
+Required: **NO**.
+
+Email address of user to impersonate.
 
 # Usage Example
 
