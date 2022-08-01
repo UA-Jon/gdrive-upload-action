@@ -23,7 +23,7 @@ const (
 	nameInput        = "name"
 	folderIdInput    = "folderId"
 	credentialsInput = "credentials"
-	impersonateUser  = "impersonate"
+	impersonateInput = "impersonate"
 )
 
 func main() {
@@ -69,7 +69,7 @@ func main() {
 	}
 
 	// impersonate user for file upload
-	impersonate := githubactions.GetInput(impersonateUser)
+	impersonate := githubactions.GetInput(impersonateInput)
 	if impersonate != "" {
 		conf.Subject = impersonate
 	}
