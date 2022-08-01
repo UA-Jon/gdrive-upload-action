@@ -1,5 +1,5 @@
-[![build](https://github.com/team-tumbleweed/gdrive-upload-action/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/team-tumbleweed/gdrive-upload-action/actions)
-[![Go Report Card](https://goreportcard.com/badge/github.com/team-tumbleweed/gdrive-upload-action)](https://goreportcard.com/report/github.com/team-tumbleweed/gdrive-upload-action)
+[![build](https://github.com/UpstreamJon/gdrive-upload-action/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/UpstreamJon/gdrive-upload-action/actions)
+[![Go Report Card](https://goreportcard.com/badge/github.com/UpstreamJon/gdrive-upload-action)](https://goreportcard.com/report/github.com/UpstreamJon/gdrive-upload-action)
 
 # gdrive-upload-action
 Github action that uploads files to Google Drive.
@@ -34,6 +34,10 @@ Required: **YES**.
 
 A base64 encoded string with the [GSA credentials](https://stackoverflow.com/questions/46287267/how-can-i-get-the-file-service-account-json-for-google-translate-api/46290808).
 
+## ``impersonate``
+Required: **NO**.
+
+Email address of user to impersonate.
 
 # Usage Example
 
@@ -60,7 +64,7 @@ jobs:
           zip -r archive.zip *
 
       - name: Upload to gdrive
-        uses: team-tumbleweed/gdrive-upload-action@main
+        uses: UpstreamJon/gdrive-upload-action@main
         with:
           filename: "archive.zip"
           name: "documentation.zip"
