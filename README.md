@@ -64,7 +64,7 @@ jobs:
           zip -r archive.zip *
 
       - name: Upload to gdrive
-        uses: team-tumbleweed/gdrive-upload-action@main
+        uses: UpstreamJon/gdrive-upload-action@main
         with:
           filename: "archive.zip"
           name: "documentation.zip"
