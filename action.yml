@@ -14,6 +14,9 @@ inputs:
   credentials:
     description: 'the service account credentials encoded in base64'
     required: true
+  impersonate:
+    description: 'the user you want the file uploaded as'
+    required: false
 
 runs:
   using: docker
