@@ -3,6 +3,8 @@
 
 # gdrive-upload-action
 Github action that uploads files to Google Drive.
+This action is forked from https://github.com/team-tumbleweed/gdrive-upload-action and adds the ability to impersonate a user for the upload.
+
 **This only works with a Google Service Account!**
 
 To make a GSA go to the [Credentials Dashboard](https://console.cloud.google.com/apis/credentials). You will need to download the **.json key** and base64 encode it. You will use this string as the `credentials` input. To convert the *json* file to base64 without having to use an online tool (which is insecure), use this command:
