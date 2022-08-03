@@ -72,4 +72,5 @@ jobs:
           name: "documentation.zip"
           folderId: ${{ secrets.folderId }}
           credentials: ${{ secrets.credentials }}
+          impersonate: username@email.com
 ```
